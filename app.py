@@ -8,7 +8,7 @@ import time
 import uuid
 
 # Инициализация приложения Flask и конфигурация базы данных и веб-сокетов
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.config['SECRET_KEY'] = 'secret!'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
